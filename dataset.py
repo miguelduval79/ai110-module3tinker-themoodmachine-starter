@@ -23,6 +23,15 @@ POSITIVE_WORDS = [
     "chill",
     "relaxed",
     "amazing",
+    "hopeful",
+    "hopeful",
+    "proud",
+    "best",
+    "nice",
+    "funny",
+    "confident",
+    "fire",
+    "sick",
 ]
 
 NEGATIVE_WORDS = [
@@ -36,6 +45,12 @@ NEGATIVE_WORDS = [
     "stressed",
     "hate",
     "boring",
+    "nervous",
+    "wrong",
+    "traffic",
+    "worse",
+    "meh",
+    "stuck",
 ]
 
 # ---------------------------------------------------------------------
@@ -92,3 +107,30 @@ TRUE_LABELS = [
 #
 # Remember to keep them aligned:
 #   len(SAMPLE_POSTS) == len(TRUE_LABELS)
+
+SAMPLE_POSTS.extend([
+    "Lowkey stressed but I think I got this",
+    "This is the best day ever 😂",
+    "I absolutely love getting stuck in traffic",
+    "Meh... just another day",
+    "Highkey excited but also nervous",
+    "This is so boring 💀",
+    "I guess it could be worse",
+    "Why does everything go wrong for me",
+    "Not bad actually, kinda nice",
+    "I hate this but also kinda funny lol",
+])
+
+TRUE_LABELS.extend([
+    "mixed",     # stressed but confident
+    "positive",  # clear excitement + emoji
+    "negative",  # sarcasm
+    "neutral",   # flat tone
+    "mixed",     # excited + nervous
+    "negative",  # boring + emoji
+    "neutral",   # ambiguous
+    "negative",  # frustration
+    "mixed",     # not bad + nice
+    "mixed",     # hate + funny
+    
+])
